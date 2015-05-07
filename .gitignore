@@ -1,0 +1,7 @@
+.sass-cache/*
+.bower-cache/*
+.bower-registry/*
+.bower-tmp/*
+node_modules/*
+libs/*
+.idea/*

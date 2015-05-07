@@ -1,0 +1,331 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+//Colors
+$gray: #665C62;
+$yellow-green: #C9FA7F;
+$pale-green: #7FFAC1;
+$blue-green: #32E3CB;
+$blue: #129ACC;
+$inverse: white;
+
+
+//Add your Sass here
+header,
+nav,
+section,
+article,
+footer {
+   padding: 20px;
+   border: 1px solid transparent;
+   margin: -1px;
+}
+
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 200;
+   color: darken($gray, 10%);
+}
+
+strong {
+   font-weight: 700;
+}
+
+
+.global {
+   background-color: $gray;
+   color: $inverse;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+}
+
+nav {
+   padding: 0;
+   ul {
+      list-style-type: none;
+      li {
+         display: inline-block;
+         padding: 10px 20px;
+         a {
+            color: $inverse;
+            text-decoration: none;
+            &:hover {
+               color: darken($inverse, 10%);
+            }
+         }
+      }
+   }
+}
+
+.header.global {
+   padding-bottom: 0;
+   h1 {
+      font-size: 32px;
+      .and {
+         display: inline-block;
+         border-radius: 50%;
+         width: 40px;
+         height: 40px;
+         background-color: lighten($gray, 10%);
+      }
+   }
+}
+
+.nav.global {
+   font-size: 12px;
+}
+
+.whoami {
+   background-color: $yellow-green;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase;
+   font-size: 32px;
+}
+
+
+.example {
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.ux,
+.storyteller {
+   padding: 0;
+   font-weight: 200;
+   font-size: 20px;
+
+   h3 {
+      padding: 40px 20px;
+      font-size: 40px;
+      font-weight: 200;
+      line-height: 1.3;
+      span {
+         display: block;
+         &:first-child {
+            font-size: 52px;
+         }
+      }
+   }
+
+   a {
+      font-weight: 400;
+      text-decoration: none;
+      &:hover {
+         color: white;
+         &:after {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 48px;
+            content: '\276f';
+            opacity: .3;
+         }
+      }
+   }
+
+   .redirect {
+      display: block;
+      font-family: Montserrat, sans-serif;
+      text-transform: uppercase;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      color: $inverse;
+   }
+}
+
+
+.ux {
+   background-color: $pale-green;
+
+   a {
+      color: darken($pale-green, 90%);
+      &:hover {
+         background-color: darken($pale-green, 50%);
+      }
+   }
+
+   b {
+      background-color: darken($pale-green, 10%);
+   }
+
+   .examples {
+      color: darken($pale-green, 90%);
+      .example {
+         &:hover {
+            background-color: darken($pale-green, 50%);
+         }
+      }
+
+      .left {
+         background-color: darken($pale-green, 10%);
+      }
+      .middle {
+         background-color: darken($pale-green, 20%);
+      }
+      .right {
+         background-color: darken($pale-green, 30%);
+      }
+   }
+   .redirect {
+      background-color: darken($pale-green, 40%);
+   }
+}
+
+
+.storyteller {
+   background-color: $blue-green;
+
+   a {
+      color: darken($blue-green, 90%);
+      &:hover {
+         background-color: darken($blue-green, 50%);
+      }
+   }
+
+   b {
+      background-color: darken($blue-green, 10%);
+   }
+
+   .examples {
+      color: darken($blue-green, 90%);
+      .example {
+         &:hover {
+            background-color: darken($blue-green, 50%);
+         }
+      }
+
+      .left {
+         background-color: darken($blue-green, 10%);
+      }
+      .middle {
+         background-color: darken($blue-green, 20%);
+      }
+      .right {
+         background-color: darken($blue-green, 30%);
+      }
+   }
+   .redirect {
+      background-color: darken($blue-green, 40%);
+   }
+}
+
+footer {
+   background-color: darken($gray, 10%);
+   color: lighten($gray, 30%);
+   text-align: center;
+   text-transform: uppercase;
+   font-family: Montserrat, sans-serif;
+   font-size: 16px;
+   a {
+      color: $yellow-green;
+      text-decoration: none;
+   }
+   span {
+      display: inline-block;
+      padding: 8px;
+   }
+   .contacts {
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 1px solid darken($gray, 10%);
+   }
+}
+
+header {
+   text-align: center;
+   .columns {
+      text-align: left;
+   }
+}
+
+h2 {
+   text-align: center;
+}
+
+.row h3 {
+   font-size: 24px;
+   font-weight: 900;
+   text-transform: uppercase;
+   margin-bottom: 0;
+}
+
+.page-title {
+   color: white;
+
+   &.ux {
+      background-color: #e74c3c;
+   }
+
+   &.stories {
+      background-color: #8e44ad;
+   }
+
+   &.concepts {
+      background-color: #7f8c8d;
+   }
+}
+
+//--------- UX -----------
+.ux-cares {
+   background-color: #white;
+}
+.ux-approach {
+   background-color: #1abc9c;
+   color: white;
+}
+
+.ux-what-i-do {
+   background-color: #ecf0f1;
+}
+
+
+//--------- STORIES -----------
+.stories-empire-dawn {
+   background-color: #d35400;
+   color: white;
+}
+
+.stories-jade-moon {
+   background-color: #27ae60;
+   color: white;
+}
+
+.stories-millennium-war {
+   background-color: #c0392b;
+   color: white;
+}
+
+.stories-dark-night {
+
+   background-color: #34495e;
+   color: white;
+}
+
+.stories-foreshadowing {
+   background-color: #7f8c8d;
+   color: white;
+}
+
+
+//-------- CONCEPT ART ---------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
